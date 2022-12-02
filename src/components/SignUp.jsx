@@ -7,7 +7,7 @@ function SignUp({ setIsAuth }) {
   const [user, setUser] = useState(null);
 
   const signUp = () => {
-    Axios.post("https://odd-cyan-basket-clam-cape.cyclic.app/signup", user).then((res) => {
+    Axios.post("https://tictactoebackend-7mnr.onrender.com/signup", user).then((res) => {
       const { token, userId, firstName, lastName, username, hashedPassword } = res.data;
       cookies.set("token", token);
       cookies.set("userId", userId);

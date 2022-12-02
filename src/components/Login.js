@@ -8,7 +8,7 @@ function Login({ setIsAuth }) {
 
   const cookies = new Cookies();
   const login = () => {
-    Axios.post("https://odd-cyan-basket-clam-cape.cyclic.app/login", {
+    Axios.post("https://tictactoebackend-7mnr.onrender.com/login", {
       username,
       password,
     }).then((res) => {
